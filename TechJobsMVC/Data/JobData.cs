@@ -45,7 +45,6 @@ namespace TechJobsMVC.Data
             }
             foreach (Job job in AllJobs)
             {
-
                 string aValue = GetFieldValue(job, column);
 
                 if (aValue != null && aValue.ToLower().Contains(value.ToLower()))
@@ -53,7 +52,6 @@ namespace TechJobsMVC.Data
                     jobs.Add(job);
                 }
             }
-
             return jobs;
         }
 
